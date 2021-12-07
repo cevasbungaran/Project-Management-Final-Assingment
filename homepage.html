@@ -1,9 +1,135 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepagestyle.css">
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="">
+                <img src="img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div> 
         
-    </body>
+        <div class="carousel-caption d-none d-md-block">
+
+            <div class="text">
+                <h1>Welcome to Australia Weather</h1>
+                <h3>Your daily weather report</h3>
+            </div>
+            
+            <select class="form-select" aria-label="Default select example" style="width: 200px;">
+                <option selected>Lokasi</option>
+                <option value="1">Adelaide</option>
+                <option value="2">Albany</option>
+                <option value="3">Albury</option>
+                <option value="3">Alice Springs</option>
+                <option value="3">Badgerys Creek</option>
+                <option value="3">Ballarat</option>
+                <option value="3">Bendigo</option>
+                <option value="3">Brisbane</option>
+                <option value="3">Cairns</option>
+                <option value="3">Canberra</option>
+                <option value="3">Cobar</option>
+                <option value="3">Coffs Harbour</option>
+                <option value="3">Dartmoor</option>
+                <option value="3">Gold Coast</option>
+                <option value="3">Katherina</option>
+                <option value="3">Launceston</option>
+                <option value="3">Melbourne</option>
+                <option value="3">Melbourne Airport</option>
+                <option value="3">Mildura</option>
+                <option value="3">Moree</option>
+                <option value="3">Mount Gambier</option>
+                <option value="3">Mount Ginini</option>
+                <option value="3">Newcastle</option>
+                <option value="3">Nhil</option>
+                <option value="3">Norah Head</option>
+                <option value="3">Norfolk Island</option>
+                <option value="3">Nuriootpa</option>
+                <option value="3">Pearce RAAF</option>
+                <option value="3">Perth</option>
+                <option value="3">Perth Airport</option>
+                <option value="3">Penrith</option>
+                <option value="3">Portland</option>
+                <option value="3">Richmond</option>
+                <option value="3">Sale</option>
+                <option value="3">Salmon Gums</option>
+                <option value="3">Sydney</option>
+                <option value="3">Sydney Airport</option>
+                <option value="3">Townsville</option>
+                <option value="3">Tuggeranong</option>
+                <option value="3">Uluru</option>
+                <option value="3">Wagga Wagga</option>
+                <option value="3">Walpole</option>
+                <option value="3">Watsonia</option>
+                <option value="3">Witchcliffe</option>
+                <option value="3">Williamtown</option>
+                <option value="3">Wollongong</option>
+                <option value="3">Woomera</option>
+              </select>
+
+            
+            <div class="tanggal">
+                <input class="btn btn-light" type="date">
+            </div>
+            <div class="humi9am">
+                <label for="humi9am">Humidity 9AM</label>
+                <br>
+                <input class="btn btn-light" type="text" placeholder="Humidity 9AM">
+            </div>
+            <div class="humi3pm">
+                <label for="humi3pm">Humidity 3PM</label>
+                <br>
+                <input class="btn btn-light" type="text" placeholder="Humidity 3PM">
+            </div>
+            <div class="rainfall">
+                <label for="rainfall">Rainfall</label>
+                <br>
+                <input class="btn btn-light" type="text" placeholder="Rainfall">
+            </div>
+            <div class="sunshine">
+                <label for="sunshine">Sunshine</label>
+                <br>
+                <input class="btn btn-light" type="text" placeholder="Sunshine">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</body>
+
 </html>
