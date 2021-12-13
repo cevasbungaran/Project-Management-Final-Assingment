@@ -1,3 +1,74 @@
-.text{
+body{
+    background-color: rgb(226, 226, 226);
+}
+#konten{
+    top: 2px;
+    left: 250px;
+}
+.report{
+    position: relative;
+    right: 560px;
+    font-weight: 600;
+}
+a:link {
+    text-decoration: none;
     color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
+.matahari{
+    left: 200px;
+}
+#Lokasi{
+    position: absolute;
+    left: 230px;
+    top: 238px;
+}
+.tanggal {
+    position: absolute;
+    left: 480px;
+    top: 238px;
+ }
+.humi9am{
+    position: absolute;
+    top: 303px;
+} 
+.humi3pm{
+    position: absolute;
+    left: 220px;
+    top: 303px;
+}
+.rainfall{
+    position: absolute;
+    left: 450px;
+    width: 10%;
+    top: 303px;
+}
+.sunshine{
+    position: absolute;
+    left: 680px;
+    top: 303px;
+}
+#check{
+    position: absolute;
+    left: 370px;
+    top: 405px;
+}
+.text{
+    text-align: justify;
+    padding: 30px 30px 30px 30px;
+    font-weight: 400;
 }
