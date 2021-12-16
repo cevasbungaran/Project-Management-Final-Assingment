@@ -7,7 +7,7 @@ body{
 }
 .report{
     position: relative;
-    right: 560px;
+    right: 500px;
     font-weight: 600;
 }
 a:link {
@@ -71,4 +71,14 @@ a:link {
     text-align: justify;
     padding: 30px 30px 30px 30px;
     font-weight: 400;
+}
+.carousel-control-prev-icon{
+    height: 24px;
+    width: 24px;
+}
+.font-icon{
+    height: 50px;
+    width: 50px;
+    background-color:black;
+    border-radius: 15px;
 }
