@@ -23,7 +23,6 @@ import sys
 
 # Membaca dataset 
 df = pd.read_csv('weatherAUS.csv')
-
 #==== EKSPLORASI DATA =====
 
 #Melihat atribut/kolom yang dimiliki oleh dataset
