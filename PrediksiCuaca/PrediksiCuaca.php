@@ -15,7 +15,7 @@
 
     <div class="header">
         <img src="sun-removebg-preview.png" alt="sun">
-        <a href="../homepage.html">
+        <a href="../homepage.php">
             <h1 id="title">AUSTRALIA WEATHER</h1>
         </a>
     </div>

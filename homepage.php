@@ -38,7 +38,7 @@
 
         <div class="carousel-caption d-none d-md-block" id="konten">
             <div class="report">
-                <a href="Rentang Cuaca/RentangCuaca.html"> Weekly Report Weather</a>
+                <a href="../manpro/Rentang Cuaca/RentangCuaca.php"> Weekly Report Weather</a>
             </div>
             <div class="matahari">
                 <img src="img/sun-removebg-preview.png" style="width: 80px;">

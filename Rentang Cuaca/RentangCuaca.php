@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
 </head>
 
 <body>
   <div class="header">
     <img src="sun-removebg-preview.png" alt="sun">
-    <a href="../homepage.html">
+    <a href="../homepage.php">
       <h1 id="title">AUSTRALIA WEATHER</h1>
     </a>
   </div>
@@ -154,6 +156,33 @@
         <p>Max Temp : 28 C</p>
         <p>Rainfall : 0</p>
       </div>
+      <div id="boxgrafik">
+        <canvas id="grafik" style="width:100%;max-width:700px"></canvas>
+        <script>
+          var xValues = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+          new Chart("grafik", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{ 
+              data: [24,24,24,24,24,24,24],
+              borderColor: "green",
+              fill: false
+            }, { 
+                data: [28,28,28,28,28,28,28],
+                borderColor: "red",
+                fill: false
+            }, { 
+                data: [0,0,0,0,0,0,0,0],
+                borderColor: "blue",
+                fill: false
+            }]
+          },
+          options: {
+            legend: {display: false}
+          }
+        });
+        </script>
+      </div>
 </body>
-
 </html>
