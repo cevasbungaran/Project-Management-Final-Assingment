@@ -145,12 +145,16 @@ with open(pkl_filename, 'rb') as file:
 
 
 #Load data baru yg akan diprediksi label kelasnya
-#df_new_weatherAUS = pd.read_csv('new_weatherAUS.csv', delimiter = ',')
+df_new_weatherAUS = pd.read_csv('new_weatherAUS.csv', delimiter = ',')
 predict_dataToday = {'Rainfall':[sys.argv[1]], 'Humidity9am':[sys.argv[2]], 'Humidity3pm':[sys.argv[3]]}
 today = pd.DataFrame(predict_dataToday)
 today.head()
+
+#X_new = df_new_weatherAUS[['Humidity9am', 'Humidity3pm','Rainfall','Sunshine']].values
+#today = pd.DataFrame(X_new)
+#today.head()
 #X_new = df_new_weatherAUS[['Humidity9am', 'Humidity3pm','Rainfall','Sunshine']].values
 
 #Melakukan prediksi
-Y_pred_new = loaded_model_Naive_Weather.predict(today)
-print(Y_pred_new)
+#Y_pred_new = loaded_model_Naive_Weather.predict(X_new)
+#print(Y_pred_new)

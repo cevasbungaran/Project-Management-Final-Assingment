@@ -178,6 +178,8 @@ with open(pkl_filename, 'rb') as file:
 df_new_weatherAUS = pd.read_csv('new_weatherAUS.csv', delimiter = ',')
 
 X_new2 = df_new_weatherAUS[['Humidity9am', 'Humidity3pm','Rainfall','Sunshine']].values
+tomorrow = pd.DataFrame(X_new2)
+tomorrow.head()
 
 #Melakukan prediksi
 Y_pred_new2 = loaded_model_Naive_Weather2.predict(X_new2)
